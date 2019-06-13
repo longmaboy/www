@@ -8,6 +8,7 @@
 
 namespace app\admin\controller;
 
+use think\Db;
 use think\Config;
 
 class Index {
@@ -33,7 +34,7 @@ class Index {
             $data = Db::table('user')->select();
 
             echo json_encode($data);
-            
+
             return;
         }
 
