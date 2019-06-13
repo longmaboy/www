@@ -21,7 +21,7 @@ class Index {
                 $data = Db::table('user')->select();
 
                 echo json_encode($data);
-                
+
                 return;
             }else{
                 echo json_encode('我是后台的控制器');
@@ -29,6 +29,11 @@ class Index {
             }
         }else{
             echo json_encode('参数不对');
+
+            $data = Db::table('user')->select();
+
+            echo json_encode($data);
+            
             return;
         }
 
