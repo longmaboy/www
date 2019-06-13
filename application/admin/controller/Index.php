@@ -9,6 +9,7 @@
 namespace app\admin\controller;
 
 use think\Db;
+use think\paginator;
 use think\Config;
 
 class Index {
@@ -19,7 +20,7 @@ class Index {
 
             if ($_POST['type'] == @"1" && $_POST['name'] == "list") {
 
-                $data = Db::table('user')->select();
+                $data = Db::table('user')->select()->paginate(2);
 
                 echo json_encode($data);
 
@@ -30,10 +31,6 @@ class Index {
             }
         }else{
             echo json_encode('参数不对');
-
-            $data = Db::table('user')->select();
-
-            echo json_encode($data);
 
             return;
         }
