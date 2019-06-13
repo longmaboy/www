@@ -24,6 +24,9 @@ return [
     'hostport'        => '3306',
     // 连接dsn
     'dsn'             => '',
+    //ceshi
+    'dsns'            => '',
+
 
     // 数据库连接参数
     'params'          => [],
