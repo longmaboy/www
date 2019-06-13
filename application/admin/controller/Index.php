@@ -17,7 +17,11 @@ class Index {
         if (isset($_POST['type']) && isset($_POST['name'])) {
 
             if ($_POST['type'] == @"1" && $_POST['name'] == "list") {
-                echo json_encode(\config()['home']);
+
+                $data = Db::table('user')->select();
+
+                echo json_encode($data);
+                
                 return;
             }else{
                 echo json_encode('我是后台的控制器');

@@ -24,10 +24,6 @@ return [
     'hostport'        => '3306',
     // 连接dsn
     'dsn'             => '',
-    //ceshi
-    'dsns'            => '',
-
-
     // 数据库连接参数
     'params'          => [],
     // 数据库编码默认采用utf8
