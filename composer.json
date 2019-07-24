@@ -18,6 +18,10 @@
     "require": {
         "php": ">=5.6.0",
         "topthink/framework": "5.1.*"
+
+    },
+    "require": {
+        "teg1c/thinkphp-qiniu-sdk": "dev-master"
     },
     "autoload": {
         "psr-4": {

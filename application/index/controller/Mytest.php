@@ -21,7 +21,6 @@ class Mytest
     public function test() {
 
 
-
         return 'hello my test';
     }
 }

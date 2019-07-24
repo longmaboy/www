@@ -8,49 +8,73 @@
 
 namespace app\admin\controller;
 
-use think\Db;
-use think\paginator;
-use think\Config;
+use app\admin\model\SfContent;
 
-class Index {
+define('UPLOAD_DIR','./uploadimage/');
+
+class Index{
 
     public function index() {
 
-        if (isset($_POST['type']) && isset($_POST['name'])) {
+        $con = SfContent::get(['status'=>'1']);
 
-            if ($_POST['type'] == @"1" && $_POST['name'] == "list") {
+        var_dump($con->select()->toArray());
 
-                $data = Db::table('user')->select()->paginate(2);
+        echo "<br/>";
 
-                echo json_encode($data);
+//        $list1=SfContent::has('AdminMessage',['user'=>'jiehechen123'])->select();
 
-                return;
-            }else{
-                echo json_encode('我是后台的控制器');
-                return;
-            }
-        }else{
-            echo json_encode('参数不对');
+        $list = $con->paginate(10,true,[
+            'page' => 1,
+        ])->each(function($item, $key){
+            $item['total'] = $key;
+            return $item;
+        })->toArray();
 
-            return;
-        }
+        var_dump($list);
 
+//        $data = config()['requestsuccess'];
+//        $data['code'] = 202;
+//        $data['message'] = 'param error';
+//        $data['data'] = $list;
+//        echo json($data);
+
+//        echo json($list);
     }
 
     public function test() {
 //        return '我是后台控制器test方法';
 
-        $data = config();
+//        $data = config();
 
 //        dump($data);
-        dump($data['app']);
+//        dump($data['app']);
 
+        $data = $_GET['password'];
 
+        echo md5($_GET["password"]).'a';
+        echo md5(md5($_GET["password"]).'a');
 
 
 
     }
 
+    public function imgApp() {
+
+
+
+    }
+
+
+    function digui($n){
+        echo $n."digui";
+        if($n>0){
+            $this-> digui($n-1);
+        }else{
+            echo "<-->";
+        }
+        echo $n." ";
+    }
 
 
 }

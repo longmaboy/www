@@ -144,6 +144,7 @@ return [
     'exception_handle'       => '',
 
 
-    'name' => '云之梦',
+    //个人配置部分
+    'sendcode' => true,
 
 ];
