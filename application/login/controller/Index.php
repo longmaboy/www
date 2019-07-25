@@ -45,18 +45,18 @@ class Index extends Token
 
         $exphone = Db::table('sf_user')->where('telephone',$_POST['telephone'])->find();
 
-        $data = config()['requestsuccess'];
-        $data['data'] = [
-            'telephone' => $_POST['telephone']
-        ];
-        $data['code'] = 202;
-        $data['message'] = '密码错误';
-        return json($data);
-//
-//        if (isset($exphone) && !empty($exphone)) {
-//
-//            if (md5(md5($_POST["password"]).'a') == $exphone['password']) {
-//
+        if (isset($exphone) && !empty($exphone)) {
+
+            if (md5(md5($_POST["password"]).'a') == $exphone['password']) {
+
+                $data = config()['requestsuccess'];
+                $data['data'] = [
+                    'telephone' => $_POST['telephone']
+                ];
+                $data['code'] = 202;
+                $data['message'] = '密码错误';
+                return json($data);
+
 //                //更新登录时间
 //                $up_time = ['update_time' => $this->microtime_float2()];
 //                Db::name('sf_user')
@@ -96,26 +96,26 @@ class Index extends Token
 //                $data['code'] = 200;
 //                $data['message'] = '登录成功';
 //                return json($data);
-//
-//            }else{
-//                $data = config()['requestsuccess'];
-//                $data['data'] = [
-//                    'telephone' => $_POST['telephone']
-//                ];
-//                $data['code'] = 202;
-//                $data['message'] = '密码错误';
-//                return json($data);
-//            }
-//
-//        }else{
-//
-//            $data = config()['requestsuccess'];
-//            $data['data'] = $exphone;
-//            $data['code'] = 201;
-//            $data['message'] = '账号不存在';
-//            return json($data);
-//
-//        }
+
+            }else{
+                $data = config()['requestsuccess'];
+                $data['data'] = [
+                    'telephone' => $_POST['telephone']
+                ];
+                $data['code'] = 202;
+                $data['message'] = '密码错误';
+                return json($data);
+            }
+
+        }else{
+
+            $data = config()['requestsuccess'];
+            $data['data'] = $exphone;
+            $data['code'] = 201;
+            $data['message'] = '账号不存在';
+            return json($data);
+
+        }
 
     }
 
