@@ -10,7 +10,7 @@ namespace app\login\controller;
 
 use think\Db;
 
-class code
+class Code
 {
     public function index() {
 

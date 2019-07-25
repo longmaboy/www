@@ -8,15 +8,15 @@
 
 namespace app\person\controller;
 
-use app\login\controller\loadimage;
-use app\login\controller\token;
-use app\load\controller\loadimg;
+use app\login\controller\Loadimage;
+use app\login\controller\Token;
+use app\load\controller\Loadimg;
 
 class uploadphoto
 {
     public function index () {
 
-        if (!token::verification_header_token()) {
+        if (!Token::verification_header_token()) {
             $data = config()['requestsuccess'];
             $data['code'] = 301;
             $data['message'] = 'token error';
@@ -26,7 +26,7 @@ class uploadphoto
 
         if (isset($_POST['token']) && isset($_POST['verificationcode'])) {
 
-            if (token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
+            if (Token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
 
                 if (!isset($_POST['image'])) {
                     $data = config()['requestsuccess'];

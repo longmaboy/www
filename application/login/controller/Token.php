@@ -9,7 +9,7 @@
 namespace app\login\controller;
 
 
-class token
+class Token
 {
 
     //设置AES秘钥

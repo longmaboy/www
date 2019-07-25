@@ -12,7 +12,7 @@ namespace app\login\controller;
 use think\Db;
 
 
-class register
+class Register
 {
     public function index() {
 

@@ -14,7 +14,7 @@ use Qiniu\Auth;
 use Qiniu\Storage\UploadManager;
 
 
-class uploadimg
+class Uploadimg
 {
     //单图上传 七牛云
     /**

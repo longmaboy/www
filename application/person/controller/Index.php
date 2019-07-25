@@ -10,7 +10,7 @@ namespace app\person\controller;
 
 use app\load\controller\loadimg;
 
-class index
+class Index
 {
     public function index () {
 

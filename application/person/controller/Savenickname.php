@@ -8,14 +8,14 @@
 
 namespace app\person\controller;
 
-use app\login\controller\token;
+use app\login\controller\Token;
 use think\Db;
 
-class savenickname
+class Savenickname
 {
     public function index () {
 
-        if (!token::verification_header_token()) {
+        if (!Token::verification_header_token()) {
             $data = config()['requestsuccess'];
             $data['code'] = 301;
             $data['message'] = 'token error';
@@ -25,7 +25,7 @@ class savenickname
 
         if (isset($_POST['token']) && isset($_POST['verificationcode'])) {
 
-            if (token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
+            if (Token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
 
                 if (!isset($_POST['nickname'])) {
                     $data = config()['requestsuccess'];

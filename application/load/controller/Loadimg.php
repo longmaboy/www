@@ -10,7 +10,7 @@ namespace app\load\controller;
 
 use think\Db;
 
-class loadimg
+class Loadimg
 {
     static public function myloadimage($imgStr) {
 

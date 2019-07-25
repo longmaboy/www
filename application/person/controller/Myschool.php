@@ -12,7 +12,7 @@ use app\login\controller\token;
 use app\school\controller\publish;
 use think\Db;
 
-class myschool
+class Myschool
 {
     /**
      * 学校省份api
@@ -20,7 +20,7 @@ class myschool
      */
     public function schoolprovince () {
 
-        if (!token::verification_header_token()) {
+        if (!Token::verification_header_token()) {
             $data = config()['requestsuccess'];
             $data['code'] = 301;
             $data['message'] = 'token error';
@@ -30,7 +30,7 @@ class myschool
 
         if (isset($_POST['token']) && isset($_POST['verificationcode'])) {
 
-            if (token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
+            if (Token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
 
                 return $this->queryProvince();
 
@@ -86,7 +86,7 @@ class myschool
      */
     public function schoollist() {
 
-        if (!token::verification_header_token()) {
+        if (!Token::verification_header_token()) {
             $data = config()['requestsuccess'];
             $data['code'] = 301;
             $data['message'] = 'token error';
@@ -96,7 +96,7 @@ class myschool
 
         if (isset($_POST['token']) && isset($_POST['verificationcode'])) {
 
-            if (token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
+            if (Token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
 
                 if (!isset($_POST['province'])) {
                     $data = config()['requestsuccess'];
@@ -161,7 +161,7 @@ class myschool
      */
     public function mySchool() {
 
-        if (!token::verification_header_token()) {
+        if (!Token::verification_header_token()) {
             $data = config()['requestsuccess'];
             $data['code'] = 301;
             $data['message'] = 'token error';
@@ -171,7 +171,7 @@ class myschool
 
         if (isset($_POST['token']) && isset($_POST['verificationcode'])) {
 
-            if (token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
+            if (Token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
 
                 if (!isset($_POST['school']) || !isset($_POST['sid'])) {
                     $data = config()['requestsuccess'];
@@ -247,7 +247,7 @@ class myschool
      */
     public function commentThumbCount() {
 
-        if (!token::verification_header_token()) {
+        if (!Token::verification_header_token()) {
             $data = config()['requestsuccess'];
             $data['code'] = 301;
             $data['message'] = 'token error';
@@ -257,7 +257,7 @@ class myschool
 
         if (isset($_POST['token']) && isset($_POST['verificationcode'])) {
 
-            if (token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
+            if (Token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
 
                 if (!isset($_POST['uid'])) {
                     $data = config()['requestsuccess'];
@@ -336,7 +336,7 @@ class myschool
      */
     public function thumbsStatus() {
 
-        if (!token::verification_header_token()) {
+        if (!Token::verification_header_token()) {
             $data = config()['requestsuccess'];
             $data['code'] = 301;
             $data['message'] = 'token error';
@@ -346,7 +346,7 @@ class myschool
 
         if (isset($_POST['token']) && isset($_POST['verificationcode'])) {
 
-            if (token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
+            if (Token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
 
                 if (!isset($_POST['uid'])) {
                     $data = config()['requestsuccess'];
@@ -404,7 +404,7 @@ class myschool
      */
     public function thumbsList() {
 
-        if (!token::verification_header_token()) {
+        if (!Token::verification_header_token()) {
             $data = config()['requestsuccess'];
             $data['code'] = 301;
             $data['message'] = 'token error';
@@ -414,7 +414,7 @@ class myschool
 
         if (isset($_POST['token']) && isset($_POST['verificationcode'])) {
 
-            if (token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
+            if (Token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
 
                 if (!isset($_POST['uid']) || !isset($_POST['page'])) {
                     $data = config()['requestsuccess'];
@@ -486,7 +486,7 @@ class myschool
      */
     public function commentStatus() {
 
-        if (!token::verification_header_token()) {
+        if (!Token::verification_header_token()) {
             $data = config()['requestsuccess'];
             $data['code'] = 301;
             $data['message'] = 'token error';
@@ -496,7 +496,7 @@ class myschool
 
         if (isset($_POST['token']) && isset($_POST['verificationcode'])) {
 
-            if (token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
+            if (Token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
 
                 if (!isset($_POST['uid'])) {
                     $data = config()['requestsuccess'];
@@ -555,7 +555,7 @@ class myschool
      */
     public function personCommentList() {
 
-        if (!token::verification_header_token()) {
+        if (!Token::verification_header_token()) {
             $data = config()['requestsuccess'];
             $data['code'] = 301;
             $data['message'] = 'token error';
@@ -565,7 +565,7 @@ class myschool
 
         if (isset($_POST['token']) && isset($_POST['verificationcode'])) {
 
-            if (token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
+            if (Token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
 
                 if (!isset($_POST['uid']) || !isset($_POST['page'])) {
                     $data = config()['requestsuccess'];
