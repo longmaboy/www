@@ -9,7 +9,6 @@
 namespace app\school\controller;
 
 use app\login\controller\Token;
-use app\school\model\SfContent;
 
 use think\Db;
 

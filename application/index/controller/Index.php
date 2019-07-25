@@ -1,13 +1,7 @@
 <?php
 namespace app\index\controller;
 
-use think\App;
-use think\Config;
-use think\Controller;
-use think\Db;
-use think\view\driver\Think;
 
-use app\login\controller\token;
 
 class Index extends Controller
 {

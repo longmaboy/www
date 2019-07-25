@@ -8,30 +8,13 @@
 
 namespace app\admin\controller;
 
-use app\admin\model\SfContent;
-
 define('UPLOAD_DIR','./uploadimage/');
 
 class Index{
 
     public function index() {
 
-        $con = SfContent::get(['status'=>'1']);
-
-        var_dump($con->select()->toArray());
-
-        echo "<br/>";
-
-//        $list1=SfContent::has('AdminMessage',['user'=>'jiehechen123'])->select();
-
-        $list = $con->paginate(10,true,[
-            'page' => 1,
-        ])->each(function($item, $key){
-            $item['total'] = $key;
-            return $item;
-        })->toArray();
-
-        var_dump($list);
+        echo '12345678';
 
 //        $data = config()['requestsuccess'];
 //        $data['code'] = 202;
