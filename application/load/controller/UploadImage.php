@@ -8,10 +8,10 @@
 
 namespace app\load\controller;
 
-require_once '../vendor/teg1c/thinkphp-qiniu-sdk/qiniu_php_driver/autoload.php';
-
-use Qiniu\Auth;
-use Qiniu\Storage\UploadManager;
+//require_once '../vendor/teg1c/thinkphp-qiniu-sdk/qiniu_php_driver/autoload.php';
+//
+//use Qiniu\Auth;
+//use Qiniu\Storage\UploadManager;
 
 
 class UploadImage

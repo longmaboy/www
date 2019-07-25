@@ -29,6 +29,7 @@ class LoadImage
         $filename = md5($_POST['uid']).'u'.$_POST['uid'];
         $imgStr = UploadImage::loadPicture($image,$filename);
 
+
         if ($imgStr != null) {
 
             $data = ["photo" => $imgStr];
