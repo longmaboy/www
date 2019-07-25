@@ -8,7 +8,7 @@
 
 namespace app\person\controller;
 
-use app\login\controller\token;
+use app\login\controller\Token;
 use think\Db;
 
 class Myschool
