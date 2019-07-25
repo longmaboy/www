@@ -10,7 +10,7 @@ namespace app\login\controller;
 
 use think\Db;
 
-class Index extends token
+class Index extends Token
 {
     public function index() {
 

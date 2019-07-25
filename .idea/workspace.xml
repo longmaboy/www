@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c84f647-7514-49a2-8e9c-e18465680681" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/application/person/controller/Uploadphoto.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/person/controller/Uploadphoto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/school/controller/publish.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/school/controller/Publish.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/school/controller/schoolcircle.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/school/controller/Schoolcircle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/login/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/login/controller/Index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,24 +27,24 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="1" />
-          <entry key="php" value="22" />
+          <entry key="php" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="PHP" value="22" />
+          <entry key="PHP" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="php" value="167" />
+          <entry key="php" value="168" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="167" />
+          <entry key="PHP" value="168" />
           <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
@@ -102,11 +100,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/person/controller/Myschool.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7755">
-              <caret line="556" lean-forward="true" selection-start-line="556" selection-end-line="556" />
+            <state relative-caret-position="180">
+              <caret line="51" column="31" lean-forward="true" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/login/controller/Index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -126,7 +133,6 @@
         <option value="$PROJECT_DIR$/application/load/controller/Loadimg.php" />
         <option value="$PROJECT_DIR$/application/load/controller/Uploadimg.php" />
         <option value="$PROJECT_DIR$/application/login/controller/Code.php" />
-        <option value="$PROJECT_DIR$/application/login/controller/Index.php" />
         <option value="$PROJECT_DIR$/application/login/controller/Register.php" />
         <option value="$PROJECT_DIR$/application/login/controller/Token.php" />
         <option value="$PROJECT_DIR$/application/person/controller/Index.php" />
@@ -136,6 +142,7 @@
         <option value="$PROJECT_DIR$/application/school/controller/Publish.php" />
         <option value="$PROJECT_DIR$/application/school/controller/Schoolcircle.php" />
         <option value="$PROJECT_DIR$/application/person/controller/Uploadphoto.php" />
+        <option value="$PROJECT_DIR$/application/login/controller/Index.php" />
       </list>
     </option>
   </component>
@@ -155,8 +162,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="81" />
-    <option name="y" value="26" />
+    <option name="x" value="54" />
+    <option name="y" value="23" />
     <option name="width" value="1201" />
     <option name="height" value="843" />
   </component>
@@ -320,15 +327,15 @@
       <updated>1560412642493</updated>
       <workItem from="1560412643954" duration="441000" />
       <workItem from="1560414734312" duration="2087000" />
-      <workItem from="1564018434844" duration="1269000" />
+      <workItem from="1564018434844" duration="1471000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3797000" />
+    <option name="totallyTimeSpent" value="3999000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="81" y="26" width="1201" height="843" extended-state="0" />
+    <frame x="54" y="23" width="1201" height="843" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25798103" />
@@ -407,13 +414,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/login/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/login/controller/Code.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -484,8 +484,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/person/controller/Myschool.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7755">
-          <caret line="556" lean-forward="true" selection-start-line="556" selection-end-line="556" />
+        <state relative-caret-position="180">
+          <caret line="51" column="31" lean-forward="true" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/login/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
         </state>
       </provider>
     </entry>
