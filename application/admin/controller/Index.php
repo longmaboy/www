@@ -15,6 +15,20 @@ class Index{
     public function index() {
 
 
+        //1.连接数据库
+
+        $link = mysqli_connect('localhost', 'root', 'root123456', 'wishdb', '3306');
+
+        if (!$link) {
+            echo '数据库连接失败，错误代码：'.mysqli_connect_errno().' 错误信息：'.mysqli_connect_error().'<br />';
+        }else{
+            echo '数据库连接成功<br />';
+        }
+
+        echo "<br/>";
+        echo '------------------------------------';
+        echo "<br/>";
+
         $exphone = Db::table('sf_user')->where('telephone','13312345678')->find();
 
         var_dump($exphone);
