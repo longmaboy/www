@@ -9,8 +9,9 @@
 namespace app\login\controller;
 
 use think\Db;
+use app\login\controller\Token;
 
-class Index extends Token
+class Index
 {
     public function index() {
 
@@ -55,7 +56,7 @@ class Index extends Token
                     ->where('telephone', $_POST['telephone'])
                     ->update($up_time);
 
-                $verificationcode = $this->randomkeys2(6);
+//                $verificationcode = $this->randomkeys2(6);
                 $token = $exphone['token'];
                 $uid = $exphone['id'];
 
