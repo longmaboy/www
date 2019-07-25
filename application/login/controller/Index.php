@@ -49,33 +49,31 @@ class Index extends Token
 
             if (md5(md5($_POST["password"]).'a') == $exphone['password']) {
 
+                //更新登录时间
+                $up_time = ['update_time' => $this->microtime_float2()];
+                Db::name('sf_user')
+                    ->where('telephone', $_POST['telephone'])
+                    ->update($up_time);
+
+                $verificationcode = $this->randomkeys2(6);
+                $token = $exphone['token'];
+                $uid = $exphone['id'];
+
+                if (!Token::create_header_token($token,$uid,$this->microtime_float2())) {
+
+                    $data = config()['requestsuccess'];
+                    $data['data'] = '';
+                    $data['code'] = 301;
+                    $data['message'] = 'param error';
+                    return json($data);
+                }
+
                 $data = config()['requestsuccess'];
-                $data['data'] = [
-                    'telephone' => $_POST['telephone']
-                ];
-                $data['code'] = 202;
-                $data['message'] = '密码错误';
+                $data['data'] = 'afsgdd';
+                $data['code'] = 203;
+                $data['message'] = '登录成功';
                 return json($data);
 
-//                //更新登录时间
-//                $up_time = ['update_time' => $this->microtime_float2()];
-//                Db::name('sf_user')
-//                    ->where('telephone', $_POST['telephone'])
-//                    ->update($up_time);
-//
-//                $verificationcode = $this->randomkeys2(6);
-//                $token = $exphone['token'];
-//                $uid = $exphone['id'];
-//
-//                if (!Token::create_header_token($token,$uid,$this->microtime_float2())) {
-//
-//                    $data = config()['requestsuccess'];
-//                    $data['data'] = '';
-//                    $data['code'] = 301;
-//                    $data['message'] = 'param error';
-//                    return json($data);
-//                }
-//
 //                $rtTken = Token::create_body_token($token,$verificationcode);
 //
 //                $infoData = [
