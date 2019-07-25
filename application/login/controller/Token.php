@@ -187,7 +187,7 @@ class Token
      * @param $Verificationcode
      * @return string
      */
-    static protected function create_body_token($token, $verificationcode) {
+    static public function create_body_token($token, $verificationcode) {
         return md5($token.'.'.$verificationcode);
     }
 

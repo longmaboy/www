@@ -56,18 +56,18 @@ class Index
                     ->where('telephone', $_POST['telephone'])
                     ->update($up_time);
 
-//                $verificationcode = $this->randomkeys2(6);
+                $verificationcode = $this->randomkeys2(6);
                 $token = $exphone['token'];
                 $uid = $exphone['id'];
 
-//                if (!Token::create_header_token($token,$uid,$this->microtime_float2())) {
-//
-//                    $data = config()['requestsuccess'];
-//                    $data['data'] = '';
-//                    $data['code'] = 301;
-//                    $data['message'] = 'param error';
-//                    return json($data);
-//                }
+                if (!Token::create_header_token($token,$uid,$this->microtime_float2())) {
+
+                    $data = config()['requestsuccess'];
+                    $data['data'] = '';
+                    $data['code'] = 301;
+                    $data['message'] = 'param error';
+                    return json($data);
+                }
 
                 $data = config()['requestsuccess'];
                 $data['data'] = 'afsgdd';
