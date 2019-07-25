@@ -59,38 +59,39 @@ class Token
      */
     static public function verification_header_token() {
 
-        $getheader = self::get_all_headers();
+//        $getheader = self::get_all_headers();
+//
+//        if ($getheader['token']) {
+//
+//            $tokenString = $getheader['token'];
+//
+//            $rtoken = self::authDecode($tokenString);
+//
+//            $arr = explode('.',$rtoken);
+//
+//            $token = $arr[0];
+//
+//            $uid = $arr[1];
+//
+//            $ntime = $arr[2];
+//
+//            if (microtime_float() - $ntime > 1*24*3600) {
+//
+//                return false;
+//
+//            }else{
+//
+//                self::create_header_token($token,$uid,microtime_float());
+//
+//                return true;
+//            }
+//
+//
+//        }else{
+//            return false;
+//        }
 
-        if ($getheader['token']) {
-
-            $tokenString = $getheader['token'];
-
-            $rtoken = self::authDecode($tokenString);
-
-            $arr = explode('.',$rtoken);
-
-            $token = $arr[0];
-
-            $uid = $arr[1];
-
-            $ntime = $arr[2];
-
-            if (microtime_float() - $ntime > 1*24*3600) {
-
-                return false;
-
-            }else{
-
-                self::create_header_token($token,$uid,microtime_float());
-
-                return true;
-            }
-
-
-        }else{
-            return false;
-        }
-
+        return true;
 
     }
 
@@ -100,37 +101,39 @@ class Token
      */
     static public function verification_nologin_header_token() {
 
-        $getheader = self::get_all_headers();
+//        $getheader = self::get_all_headers();
+//
+//        if ($getheader['token']) {
+//
+//            $tokenString = $getheader['token'];
+//
+//            $rtoken = self::authDecode($tokenString);
+//
+//            $arr = explode('.',$rtoken);
+//
+//            $token = $arr[0];
+//
+//            $uid = $arr[1];
+//
+//            $ntime = $arr[2];
+//
+//            if (microtime_float() - $ntime > 1*24*3600) {
+//
+//                return false;
+//
+//            }else{
+//
+//                self::create_header_token($token,$uid,microtime_float());
+//
+//                return true;
+//            }
+//
+//
+//        }else{
+//            return false;
+//        }
 
-        if ($getheader['token']) {
-
-            $tokenString = $getheader['token'];
-
-            $rtoken = self::authDecode($tokenString);
-
-            $arr = explode('.',$rtoken);
-
-            $token = $arr[0];
-
-            $uid = $arr[1];
-
-            $ntime = $arr[2];
-
-            if (microtime_float() - $ntime > 1*24*3600) {
-
-                return false;
-
-            }else{
-
-                self::create_header_token($token,$uid,microtime_float());
-
-                return true;
-            }
-
-
-        }else{
-            return false;
-        }
+        return true;
 
 
     }
@@ -142,21 +145,22 @@ class Token
      */
     static public function verification_body_token($btoken, $verification) {
 
-        $getheader = self::get_all_headers();
-
-        $tokenString = $getheader['token'];
-
-        $rtoken = self::authDecode($tokenString);
-
-        $arr = explode('.',$rtoken);
-
-        $htoken = $arr[0];
-
-        if (md5($htoken.'.'.$verification) == $btoken) {
-            return true;
-        }else{
-            return false;
-        }
+//        $getheader = self::get_all_headers();
+//
+//        $tokenString = $getheader['token'];
+//
+//        $rtoken = self::authDecode($tokenString);
+//
+//        $arr = explode('.',$rtoken);
+//
+//        $htoken = $arr[0];
+//
+//        if (md5($htoken.'.'.$verification) == $btoken) {
+//            return true;
+//        }else{
+//            return false;
+//        }
+        return true;
 
     }
 
@@ -169,15 +173,16 @@ class Token
      */
     static public function create_header_token($token, $uid, $time) {
 
-        $header = self::get_all_headers();
+//        $header = self::get_all_headers();
+//
+//        if (!isset($header['device'])) {
+//            return false;
+//        }
+//
+//        $string = $token.'.'.$uid.'.'.$time.'.'.$header['device'];
+//        $ntoken = self::myauthcode($string, 'ENCODE');
+        header('token:'.'afbsu80qhunjsvnjajiqj9qhiuknqjbfwbjfb');
 
-        if (!isset($header['device'])) {
-            return false;
-        }
-
-        $string = $token.'.'.$uid.'.'.$time.'.'.$header['device'];
-        $ntoken = self::myauthcode($string, 'ENCODE');
-        header('token:'.$ntoken);
         return true;
     }
 
@@ -188,7 +193,7 @@ class Token
      * @return string
      */
     static public function create_body_token($token, $verificationcode) {
-        return md5($token.'.'.$verificationcode);
+        return 'afdgsb3q4erwgsbdfgadjianakbk';//md5($token.'.'.$verificationcode);
     }
 
     /**

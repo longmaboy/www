@@ -69,32 +69,26 @@ class Index
                     return json($data);
                 }
 
+                $rtTken = Token::create_body_token($token,$verificationcode);
+
+                $infoData = [
+                    'token' => $rtTken,
+                    'name'  => $exphone['name'],
+                    'age'   => $exphone['age'],
+                    'school'  => $exphone['school'],
+                    'nickname' => $exphone['nickname'],
+                    'telephone' => $exphone['telephone'],
+                    'photo'     => $exphone['photo'],
+                    'update_time' => $exphone['update_time'],
+                    'verificationcode' => $verificationcode,
+                    'uid' => $exphone['id'],
+                ];
+
                 $data = config()['requestsuccess'];
-                $data['data'] = 'afsgdd';
-                $data['code'] = 203;
+                $data['data'] = $infoData;
+                $data['code'] = 200;
                 $data['message'] = '登录成功';
                 return json($data);
-
-//                $rtTken = Token::create_body_token($token,$verificationcode);
-//
-//                $infoData = [
-//                    'token' => $rtTken,
-//                    'name'  => $exphone['name'],
-//                    'age'   => $exphone['age'],
-//                    'school'  => $exphone['school'],
-//                    'nickname' => $exphone['nickname'],
-//                    'telephone' => $exphone['telephone'],
-//                    'photo'     => $exphone['photo'],
-//                    'update_time' => $exphone['update_time'],
-//                    'verificationcode' => $verificationcode,
-//                    'uid' => $exphone['id'],
-//                ];
-//
-//                $data = config()['requestsuccess'];
-//                $data['data'] = $infoData;
-//                $data['code'] = 200;
-//                $data['message'] = '登录成功';
-//                return json($data);
 
             }else{
                 $data = config()['requestsuccess'];
