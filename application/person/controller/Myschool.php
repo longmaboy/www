@@ -9,7 +9,6 @@
 namespace app\person\controller;
 
 use app\login\controller\token;
-use app\school\controller\publish;
 use think\Db;
 
 class Myschool
@@ -32,6 +31,11 @@ class Myschool
 
             if (Token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
 
+                $data = config()['requestsuccess'];
+                $data['code'] = 999;
+                $data['message'] = 'param error';
+                $data['data'] = '';
+                return json($data);
                 return $this->queryProvince();
 
             }else{
