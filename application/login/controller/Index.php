@@ -16,7 +16,7 @@ class Index extends Token
 
         if (isset($_POST['telephone']) && isset($_POST['password'])) {
 
-            if (verification_phone($_POST['telephone'])) {
+            if ($this->verification_phone2($_POST['telephone'])) {
 
                 return self::login();
 
@@ -50,16 +50,16 @@ class Index extends Token
             if (md5(md5($_POST["password"]).'a') == $exphone['password']) {
 
                 //更新登录时间
-                $up_time = ['update_time' => microtime_float()];
+                $up_time = ['update_time' => $this->microtime_float2()];
                 Db::name('sf_user')
                     ->where('telephone', $_POST['telephone'])
                     ->update($up_time);
 
-                $verificationcode = randomkeys(6);
+                $verificationcode = $this->randomkeys2(6);
                 $token = $exphone['token'];
                 $uid = $exphone['id'];
 
-                if (!Token::create_header_token($token,$uid,microtime_float())) {
+                if (!Token::create_header_token($token,$uid,$this->microtime_float2())) {
 
                     $data = config()['requestsuccess'];
                     $data['data'] = '';
@@ -112,5 +112,41 @@ class Index extends Token
     }
 
 
+    /**
+     * 验证手机号
+     * @param $phone
+     * @return bool
+     */
+    protected function verification_phone2($phone) {
+        if (preg_match("/^1\d{10}$/", $phone)) {
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    /**
+     * 获取随机数 数字字母
+     * @param $length
+     * @return string
+     */
+    protected function randomkeys2($length) {
+        $returnStr='';
+        $pattern = '1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLOMNOPQRSTUVWXYZ';
+        for($i = 0; $i < $length; $i ++) {
+            $returnStr .= $pattern {mt_rand ( 0, 61 )};
+        }
+        return $returnStr;
+    }
+
+    /**
+     * @return 当前时间的10位时间戳
+     */
+
+    protected function microtime_float2()
+    {
+        list(, $sec) = explode(" ", microtime());
+        return $sec;
+    }
 
 }
