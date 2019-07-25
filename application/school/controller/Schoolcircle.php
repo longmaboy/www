@@ -8,12 +8,12 @@
 
 namespace app\school\controller;
 
-use app\login\controller\token;
+use app\login\controller\Token;
 use app\school\model\SfContent;
 
 use think\Db;
 
-class schoolcircle
+class Schoolcircle
 {
 
     /**
@@ -22,7 +22,7 @@ class schoolcircle
      */
     public function schoolcircles() {
 
-        if (!token::verification_header_token()) {
+        if (!Token::verification_header_token()) {
             $data = config()['requestsuccess'];
             $data['code'] = 301;
             $data['message'] = 'token error';
@@ -32,7 +32,7 @@ class schoolcircle
 
         if (isset($_POST['token']) && isset($_POST['verificationcode'])) {
 
-            if (token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
+            if (Token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
 
                 if (!isset($_POST['page'])) {
                     $data = config()['requestsuccess'];
@@ -115,7 +115,7 @@ class schoolcircle
      */
     public function contentthumb() {
 
-        if (!token::verification_header_token()) {
+        if (!Token::verification_header_token()) {
             $data = config()['requestsuccess'];
             $data['code'] = 301;
             $data['message'] = 'token error';
@@ -125,7 +125,7 @@ class schoolcircle
 
         if (isset($_POST['token']) && isset($_POST['verificationcode'])) {
 
-            if (token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
+            if (Token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
 
                 if (!isset($_POST['contentid']) || !isset($_POST['uid']) || !isset($_POST['isthumb']) || !isset($_POST['createuid'])) {
                     $data = config()['requestsuccess'];
@@ -218,7 +218,7 @@ class schoolcircle
      */
     public function commentList() {
 
-        if (!token::verification_header_token()) {
+        if (!Token::verification_header_token()) {
             $data = config()['requestsuccess'];
             $data['code'] = 301;
             $data['message'] = 'token error';
@@ -228,7 +228,7 @@ class schoolcircle
 
         if (isset($_POST['token']) && isset($_POST['verificationcode'])) {
 
-            if (token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
+            if (Token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
 
                 if (!isset($_POST['contentid']) || !isset($_POST['page'])) {
                     $data = config()['requestsuccess'];
@@ -307,7 +307,7 @@ class schoolcircle
      */
     public function comment() {
 
-        if (!token::verification_header_token()) {
+        if (!Token::verification_header_token()) {
             $data = config()['requestsuccess'];
             $data['code'] = 301;
             $data['message'] = 'token error';
@@ -317,7 +317,7 @@ class schoolcircle
 
         if (isset($_POST['token']) && isset($_POST['verificationcode'])) {
 
-            if (token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
+            if (Token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
 
                 if (!isset($_POST['contentid']) || !isset($_POST['uid']) || !isset($_POST['comment']) || !isset($_POST['createuid'])) {
                     $data = config()['requestsuccess'];

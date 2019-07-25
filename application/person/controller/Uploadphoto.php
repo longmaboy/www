@@ -12,7 +12,7 @@ use app\login\controller\Loadimage;
 use app\login\controller\Token;
 use app\load\controller\Loadimg;
 
-class uploadphoto
+class Uploadphoto
 {
     public function index () {
 
@@ -36,7 +36,7 @@ class uploadphoto
                     return json($data);
                 }else{
 
-                    return loadimg::myloadimage($_POST['image']);
+                    return Loadimg::myloadimage($_POST['image']);
                 }
 
             }else{

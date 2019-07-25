@@ -8,15 +8,15 @@
 
 namespace app\school\controller;
 
-use app\login\controller\token;
-use app\load\controller\loadimg;
+use app\login\controller\Token;
+use app\load\controller\Loadimg;
 use think\Db;
 
-class publish
+class Publish
 {
     public function index() {
 
-        if (!token::verification_header_token()) {
+        if (!Token::verification_header_token()) {
             $data = config()['requestsuccess'];
             $data['code'] = 301;
             $data['message'] = 'token error';
@@ -26,7 +26,7 @@ class publish
 
         if (isset($_POST['token']) && isset($_POST['verificationcode'])) {
 
-            if (token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
+            if (Token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
 
                 if (!isset($_POST['content'])) {
                     $data = config()['requestsuccess'];
@@ -66,7 +66,7 @@ class publish
 
             $imgArr = $_POST['images'];
 
-            $imagesStr =  loadimg::uploadmorepicture($imgArr);
+            $imagesStr =  Loadimg::uploadmorepicture($imgArr);
 
             $up_data = [
                 'content' => $content,
