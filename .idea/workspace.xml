@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c84f647-7514-49a2-8e9c-e18465680681" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/application/person/controller/Myschool.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/person/controller/Myschool.php" afterDir="false" />
-    </list>
+    <list default="true" id="5c84f647-7514-49a2-8e9c-e18465680681" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,8 +132,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/person/controller/ChooseSchool.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9705">
-              <caret line="652" column="5" selection-start-line="652" selection-start-column="5" selection-end-line="652" selection-end-column="5" />
+            <state relative-caret-position="15">
+              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
               <folding>
                 <element signature="e#120#151#0#PHP" expanded="true" />
               </folding>
@@ -412,15 +410,15 @@
       <workItem from="1564044726407" duration="5756000" />
       <workItem from="1564058319697" duration="327000" />
       <workItem from="1564058674564" duration="851000" />
-      <workItem from="1564059688190" duration="3777000" />
+      <workItem from="1564059688190" duration="4028000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22558000" />
+    <option name="totallyTimeSpent" value="22809000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="273" y="121" width="1201" height="843" extended-state="0" />
+    <frame x="333" y="109" width="1201" height="843" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27955133" />
@@ -624,8 +622,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/person/controller/ChooseSchool.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9705">
-          <caret line="652" column="5" selection-start-line="652" selection-start-column="5" selection-end-line="652" selection-end-column="5" />
+        <state relative-caret-position="15">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
           <folding>
             <element signature="e#120#151#0#PHP" expanded="true" />
           </folding>
