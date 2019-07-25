@@ -2,15 +2,15 @@
 /**
  * Created by PhpStorm.
  * User: mac
- * Date: 2019/7/15
- * Time: 15:02
+ * Date: 2019/7/25
+ * Time: 18:01
  */
 
 namespace app\load\controller;
 
 use think\Db;
 
-class Loadimg
+class LoadImage
 {
     static public function myloadimage($imgStr) {
 
@@ -27,7 +27,7 @@ class Loadimg
     static protected function uploadphoto ($image) {
 
         $filename = md5($_POST['uid']).'u'.$_POST['uid'];
-        $imgStr = uploadimg::loadPicture($image,$filename);
+        $imgStr = UploadImage::loadPicture($image,$filename);
 
         if ($imgStr != null) {
 
@@ -68,14 +68,14 @@ class Loadimg
      * @param $url_arr
      * @return array
      */
-    static protected function uploadDigui($images, $index = 0){
+    static public function uploadDigui($images, $index = 0){
 
 
         $imageString = '';
 
         foreach ($images as $value) {
 
-            $imgStr = uploadimg::loadPicture($value,'');
+            $imgStr = UploadImage::loadPicture($value,'');
 
             if ($index == 0) {
                 $imageString = $imgStr;
@@ -90,6 +90,4 @@ class Loadimg
         return $imageString;
 
     }
-
-
 }

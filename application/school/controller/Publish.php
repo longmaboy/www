@@ -9,8 +9,8 @@
 namespace app\school\controller;
 
 use app\login\controller\Token;
-use app\load\controller\Loadimg;
 use think\Db;
+use app\load\controller\LoadImage;
 
 class Publish
 {
@@ -66,7 +66,8 @@ class Publish
 
             $imgArr = $_POST['images'];
 
-            $imagesStr =  Loadimg::uploadmorepicture($imgArr);
+
+            $imagesStr =  LoadImage::uploadmorepicture($imgArr);
 
             $up_data = [
                 'content' => $content,

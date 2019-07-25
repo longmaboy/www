@@ -3,9 +3,9 @@ namespace app\index\controller;
 
 
 
-class Index extends Controller
+class Index
 {
-    public function index()
+    public function Index()
     {
 //        return "afdafaaf";
 //        $this->assign('name',$name);

@@ -8,9 +8,8 @@
 
 namespace app\person\controller;
 
-use app\login\controller\Loadimage;
 use app\login\controller\Token;
-use app\load\controller\Loadimg;
+use app\load\controller\LoadImage;
 
 class Uploadphoto
 {
@@ -36,7 +35,7 @@ class Uploadphoto
                     return json($data);
                 }else{
 
-                    return Loadimg::myloadimage($_POST['image']);
+                    return LoadImage::myloadimage($_POST['image']);
                 }
 
             }else{

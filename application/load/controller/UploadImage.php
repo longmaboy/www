@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: mac
- * Date: 2019/6/18
- * Time: 15:18
+ * Date: 2019/7/25
+ * Time: 18:18
  */
 
 namespace app\load\controller;
@@ -14,9 +14,9 @@ use Qiniu\Auth;
 use Qiniu\Storage\UploadManager;
 
 
-class Uploadimg
+class UploadImage
 {
-    //单图上传 七牛云
+//单图上传 七牛云
     /**
      * @param $dataStr    必传
      * @param $filenames  文件名 传则是同名覆盖 不传自定义新名
@@ -70,5 +70,4 @@ class Uploadimg
 //        }
 
     }
-
 }
