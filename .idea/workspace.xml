@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c84f647-7514-49a2-8e9c-e18465680681" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/application/person/controller/Myschool.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/person/controller/Myschool.php" afterDir="false" />
-    </list>
+    <list default="true" id="5c84f647-7514-49a2-8e9c-e18465680681" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,8 +102,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/person/controller/Myschool.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+            <state relative-caret-position="185">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="e#120#151#0#PHP" expanded="true" />
               </folding>
@@ -196,8 +194,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="256" />
-    <option name="y" value="23" />
+    <option name="x" value="302" />
+    <option name="y" value="127" />
     <option name="width" value="1201" />
     <option name="height" value="843" />
   </component>
@@ -403,15 +401,15 @@
       <workItem from="1564044726407" duration="5756000" />
       <workItem from="1564058319697" duration="327000" />
       <workItem from="1564058674564" duration="851000" />
-      <workItem from="1564059688190" duration="1430000" />
+      <workItem from="1564059688190" duration="1610000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20211000" />
+    <option name="totallyTimeSpent" value="20391000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="194" y="57" width="1201" height="843" extended-state="0" />
+    <frame x="256" y="23" width="1201" height="843" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27955133" />
@@ -592,8 +590,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/person/controller/Myschool.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+        <state relative-caret-position="185">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#120#151#0#PHP" expanded="true" />
           </folding>

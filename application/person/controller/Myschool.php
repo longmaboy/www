@@ -19,6 +19,12 @@ class Myschool
      */
     public function schoolprovince () {
 
+        $data = config()['requestsuccess'];
+        $data['code'] = 999;
+        $data['message'] = 'param error';
+        $data['data'] = '';
+        return json($data);
+
         if (!Token::verification_header_token()) {
             $data = config()['requestsuccess'];
             $data['code'] = 301;
@@ -31,11 +37,6 @@ class Myschool
 
             if (Token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
 
-                $data = config()['requestsuccess'];
-                $data['code'] = 999;
-                $data['message'] = 'param error';
-                $data['data'] = '';
-                return json($data);
                 return $this->queryProvince();
 
             }else{
