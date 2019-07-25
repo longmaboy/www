@@ -7,14 +7,18 @@
  */
 
 namespace app\admin\controller;
-
+use think\Db;
 define('UPLOAD_DIR','./uploadimage/');
 
 class Index{
 
     public function index() {
 
-        echo '12345678';
+
+        $exphone = Db::table('sf_user')->where('telephone','13312345678')->find();
+
+        var_dump($exphone);
+
 
 //        $data = config()['requestsuccess'];
 //        $data['code'] = 202;

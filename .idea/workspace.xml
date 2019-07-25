@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c84f647-7514-49a2-8e9c-e18465680681" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/login/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/login/controller/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/UserProtocol/protocol.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/UserProtocol/protocol.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,24 +28,24 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="2" />
-          <entry key="php" value="35" />
+          <entry key="php" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="2" />
-          <entry key="PHP" value="35" />
+          <entry key="PHP" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="php" value="246" />
+          <entry key="php" value="261" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="246" />
+          <entry key="PHP" value="261" />
           <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
@@ -54,10 +54,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="178">
+              <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -76,10 +85,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/login/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
+            <state relative-caret-position="-653">
               <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
@@ -88,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/login/controller/Register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-419">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            <state relative-caret-position="256">
+              <caret line="50" column="29" lean-forward="true" selection-start-line="50" selection-end-line="51" />
             </state>
           </provider>
         </entry>
@@ -108,18 +117,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="15" selection-start-line="15" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/load/controller/Uploadimg.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-              <folding>
-                <element signature="e#200#215#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -165,9 +162,9 @@
         <option value="$PROJECT_DIR$/application/person/controller/Uploadphoto.php" />
         <option value="$PROJECT_DIR$/application/school/controller/Schoolcircle.php" />
         <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Index.php" />
         <option value="$PROJECT_DIR$/public/UserProtocol/protocol.html" />
         <option value="$PROJECT_DIR$/application/login/controller/Index.php" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Index.php" />
       </list>
     </option>
   </component>
@@ -187,8 +184,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="62" />
-    <option name="y" value="23" />
+    <option name="x" value="122" />
+    <option name="y" value="62" />
     <option name="width" value="1201" />
     <option name="height" value="843" />
   </component>
@@ -356,15 +353,15 @@
       <updated>1560412642493</updated>
       <workItem from="1560412643954" duration="441000" />
       <workItem from="1560414734312" duration="2087000" />
-      <workItem from="1564018434844" duration="5767000" />
+      <workItem from="1564018434844" duration="6169000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8295000" />
+    <option name="totallyTimeSpent" value="8697000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="62" y="23" width="1201" height="843" extended-state="0" />
+    <frame x="122" y="62" width="1201" height="843" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25798103" />
@@ -395,13 +392,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/view/index/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -497,13 +487,6 @@
     <entry file="file://$PROJECT_DIR$/application/index/controller/Mytest.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/common.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -518,13 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/login/controller/Register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-419">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/login/controller/Code.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -534,8 +510,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/login/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
+        <state relative-caret-position="-653">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/login/controller/Register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="50" column="29" lean-forward="true" selection-start-line="50" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
         </state>
       </provider>
     </entry>

@@ -14,38 +14,30 @@ class Index extends Token
 {
     public function index() {
 
-        $data = config()['requestsuccess'];
-        $data['data'] = [
-            'telephone' => $_POST['telephone']
-        ];
-        $data['code'] = 205;
-        $data['message'] = '手机号不合法';
-        return json($data);
+        if (isset($_POST['telephone']) && isset($_POST['password'])) {
 
-//        if (isset($_POST['telephone']) && isset($_POST['password'])) {
-//
-//            if ($this->verification_phone2($_POST['telephone'])) {
-//
-//                return self::login();
-//
-//            }else{
-//
-//                $data = config()['requestsuccess'];
-//                $data['data'] = [
-//                    'telephone' => $_POST['telephone']
-//                ];
-//                $data['code'] = 205;
-//                $data['message'] = '手机号不合法';
-//                return json($data);
-//            }
-//
-//        }else{
-//
-//            $data = config()['requestsuccess'];
-//            $data['code'] = 201;
-//            $data['message'] = 'param error';
-//            return json($data);
-//        }
+            if ($this->verification_phone2($_POST['telephone'])) {
+
+                return self::login();
+
+            }else{
+
+                $data = config()['requestsuccess'];
+                $data['data'] = [
+                    'telephone' => $_POST['telephone']
+                ];
+                $data['code'] = 205;
+                $data['message'] = '手机号不合法';
+                return json($data);
+            }
+
+        }else{
+
+            $data = config()['requestsuccess'];
+            $data['code'] = 201;
+            $data['message'] = 'param error';
+            return json($data);
+        }
     }
 
 
