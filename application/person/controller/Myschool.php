@@ -17,10 +17,10 @@ class Myschool
      * 学校省份api
      * @return \think\response\Json
      */
-    public function schoolprovince () {
+    public function schoolprovince() {
 
         $data = config()['requestsuccess'];
-        $data['code'] = 999;
+        $data['code'] = 888;
         $data['message'] = 'param error';
         $data['data'] = '';
         return json($data);
