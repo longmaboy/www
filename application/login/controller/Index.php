@@ -59,7 +59,7 @@ class Index extends Token
                 $token = $exphone['token'];
                 $uid = $exphone['id'];
 
-                if (!token::create_header_token($token,$uid,microtime_float())) {
+                if (!Token::create_header_token($token,$uid,microtime_float())) {
 
                     $data = config()['requestsuccess'];
                     $data['data'] = '';
@@ -68,7 +68,7 @@ class Index extends Token
                     return json($data);
                 }
 
-                $rtTken = token::create_body_token($token,$verificationcode);
+                $rtTken = Token::create_body_token($token,$verificationcode);
 
                 $infoData = [
                     'token' => $rtTken,
