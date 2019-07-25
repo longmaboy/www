@@ -14,11 +14,6 @@ use think\Db;
 class Index
 {
     public function index() {
-        $data = config()['requestsuccess'];
-        $data['code'] = 888;
-        $data['message'] = 'param error';
-        $data['data'] = '';
-        return json($data);
 
         if (!Token::verification_header_token()) {
             $data = config()['requestsuccess'];
