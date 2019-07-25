@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: mac
- * Date: 2019/7/17
- * Time: 17:00
+ * Date: 2019/7/25
+ * Time: 22:18
  */
 
 namespace app\person\controller;
@@ -11,7 +11,7 @@ namespace app\person\controller;
 use app\login\controller\Token;
 use think\Db;
 
-class Myschool
+class ChooseSchool
 {
     /**
      * 学校省份api
@@ -651,5 +651,4 @@ class Myschool
         return json($data);
 
     }
-
 }
