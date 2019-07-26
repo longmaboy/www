@@ -22,16 +22,16 @@ class Index{
         if (!$link) {
             echo '数据库连接失败，错误代码：'.mysqli_connect_errno().' 错误信息：'.mysqli_connect_error().'<br />';
         }else{
-            echo '数据库连接成功<br />';
+            return json_encode('数据库连接成功');
         }
 
-        echo "<br/>";
-        echo '------------------------------------';
-        echo "<br/>";
-
-        $exphone = Db::table('sf_user')->where('telephone','13312345678')->find();
-
-        var_dump($exphone);
+//        echo "<br/>";
+//        echo '------------------------------------';
+//        echo "<br/>";
+//
+//        $exphone = Db::table('sf_user')->where('telephone','13312345678')->find();
+//
+//        var_dump($exphone);
 
 
 //        $data = config()['requestsuccess'];

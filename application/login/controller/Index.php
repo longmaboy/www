@@ -15,12 +15,6 @@ class Index
 {
     public function index() {
 
-        $data = config()['requestsuccess'];
-        $data['data'] = '';
-        $data['code'] = 201;
-        $data['message'] = '账号不存在';
-        return json($data);
-
         if (isset($_POST['telephone']) && isset($_POST['password'])) {
 
             if ($this->verification_phone2($_POST['telephone'])) {
