@@ -44,6 +44,12 @@ class Index
 
     protected function login() {
 
+        $data = config()['requestsuccess'];
+        $data['data'] = '';
+        $data['code'] = 201;
+        $data['message'] = '账号不存在';
+        return json($data);
+
         $exphone = Db::table('sf_user')->where('telephone',$_POST['telephone'])->find();
 
         if (isset($exphone) && !empty($exphone)) {
