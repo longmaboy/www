@@ -14,6 +14,10 @@ use think\Db;
 class Personnal
 {
 
+    public function index() {
+        echo 'fasdsgdh';
+    }
+
     public function login() {
 
         if (verification_phone($_POST['telephone'])) {
