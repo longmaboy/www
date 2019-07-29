@@ -12,6 +12,7 @@ namespace app\malongbo\controller;
 class Login
 {
     public function index() {
-        echo 'eagsdfghg';
+
+        echo Token::create_body_token();
     }
 }
