@@ -3,14 +3,14 @@
  * Created by PhpStorm.
  * User: mac
  * Date: 2019/7/29
- * Time: 13:05
+ * Time: 13:09
  */
 
 namespace app\malongbo\controller;
 
 use think\Db;
 
-class SetSchool
+class Setschool
 {
     public function index() {
 
@@ -103,5 +103,4 @@ class SetSchool
         }
 
     }
-
 }
