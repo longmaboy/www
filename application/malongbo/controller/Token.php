@@ -20,4 +20,15 @@ class Token
     static public function create_body_token() {
         return 'afdgsb3q4erwgsbdfgadjianakbk';
     }
+
+    static public function verification_header_token() {
+        return true;
+    }
+
+    static public function verification_body_token() {
+        return true;
+    }
+
+
+
 }
