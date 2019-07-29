@@ -56,7 +56,7 @@ class Uploadphoto
             return json($data);
 
         }
-        
+
     }
 
 }
