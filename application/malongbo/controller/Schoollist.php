@@ -3,24 +3,23 @@
  * Created by PhpStorm.
  * User: mac
  * Date: 2019/7/29
- * Time: 12:31
+ * Time: 12:54
  */
 
 namespace app\malongbo\controller;
 
-use think\Db;
 
-class CommentThumbCount
+class Schoollist
 {
     public function index() {
-        return self::commentThumbCount();
+        return self::schoollist();
     }
 
     /**
-     * 获取个人中心点赞评论数
+     * 学校列表api
      * @return \think\response\Json
      */
-    public function commentThumbCount() {
+    public function schoollist() {
 
         if (!Token::verification_header_token()) {
             $data = config()['requestsuccess'];
@@ -34,7 +33,7 @@ class CommentThumbCount
 
             if (Token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
 
-                if (!isset($_POST['uid'])) {
+                if (!isset($_POST['province'])) {
                     $data = config()['requestsuccess'];
                     $data['code'] = 203;
                     $data['message'] = 'param error';
@@ -42,7 +41,7 @@ class CommentThumbCount
                     return json($data);
                 }else{
 
-                    return $this->getCommentWithThumbCount($_POST['uid']);
+                    return $this->queryProvinceSChool($_POST['province']);
                 }
 
             }else{
@@ -64,43 +63,31 @@ class CommentThumbCount
             return json($data);
 
         }
+    }
+
+    protected function queryProvinceSChool($province)
+    {
+
+        $result = Db::table('sf_university')->where('province', $province)->select();
+
+        if (isset($result) && !empty($result)) {
+
+            $data = config()['requestsuccess'];
+            $data['code'] = 200;
+            $data['message'] = '学校查询成功';
+            $data['data'] = $result;
+            return json($data);
+
+        }else{
+
+            $data = config()['requestsuccess'];
+            $data['code'] = 203;
+            $data['message'] = '查询失败';
+            $data['data'] = $result;
+            return json($data);
+
+        }
 
     }
 
-    protected function getCommentWithThumbCount($uid) {
-
-        $thumbs = Db::table('sf_thumbs')
-            ->where('createuid',$uid)
-            ->where('status','1')
-            ->where('uid','<>',$uid)
-            ->where('uidstatus','0')
-            ->select();
-
-        if (isset($thumbs)) {
-            $item['thumbCount'] = count($thumbs);
-        }else{
-            $item['thumbCount'] = '0';
-        }
-
-        $comments = Db::table('sf_comment')
-            ->where('createuid',$uid)
-//            ->where('reuid',$uid)
-            ->where('status','1')
-            ->where('uid','<>',$uid)
-            ->where('uidstatus','0')
-            ->select();
-
-        if (isset($comments)) {
-            $item['commentCount'] = count($comments);
-        }else{
-            $item['commentCount'] = '0';
-        }
-
-
-        $data = config()['requestsuccess'];
-        $data['code'] = 200;
-        $data['message'] = '未读评论点赞数获取成功';
-        $data['data'] = $item;
-        return json($data);
-    }
 }
