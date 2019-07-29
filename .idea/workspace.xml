@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c84f647-7514-49a2-8e9c-e18465680681" name="Default Changelist" comment="" />
+    <list default="true" id="5c84f647-7514-49a2-8e9c-e18465680681" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/application/malongbo/controller/Allcommentstatus.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/malongbo/controller/Allcommentstatus.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/malongbo/controller/Schoolcircle.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/malongbo/controller/Schoolcircle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/school/controller/Schoolcircle.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/school/controller/Schoolcircle.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +32,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="2" />
-          <entry key="php" value="101" />
+          <entry key="php" value="102" />
           <entry key="png" value="7" />
         </counts>
       </usages-collector>
@@ -36,18 +40,18 @@
         <counts>
           <entry key="HTML" value="2" />
           <entry key="Image" value="7" />
-          <entry key="PHP" value="101" />
+          <entry key="PHP" value="102" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="php" value="1150" />
+          <entry key="php" value="1169" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="1150" />
+          <entry key="PHP" value="1169" />
           <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
@@ -63,11 +67,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/school/controller/Schoolcircle.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="210">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#120#151#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Schoolcircle.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="307" column="4" selection-start-line="307" selection-start-column="4" selection-end-line="307" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -75,20 +88,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/person/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="186" selection-start-line="186" selection-end-line="186" />
+            <state relative-caret-position="658">
+              <caret line="191" selection-start-line="191" selection-end-line="191" />
               <folding>
                 <element signature="e#120#151#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Uploadphoto.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
@@ -153,9 +157,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Allcommentstatus.php">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2700">
+              <caret line="185" selection-start-line="185" selection-end-line="185" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -203,15 +211,16 @@
         <option value="$PROJECT_DIR$/application/person/controller/Myschool.php" />
         <option value="$PROJECT_DIR$/application/malongbo/controller/SetSchool.php" />
         <option value="$PROJECT_DIR$/application/malongbo/controller/Setschool.php" />
-        <option value="$PROJECT_DIR$/application/malongbo/controller/Schoolcircle.php" />
         <option value="$PROJECT_DIR$/application/malongbo/controller/Savenickname.php" />
         <option value="$PROJECT_DIR$/application/malongbo/controller/Uploadphoto.php" />
-        <option value="$PROJECT_DIR$/application/school/controller/Schoolcircle.php" />
         <option value="$PROJECT_DIR$/application/malongbo/controller/Contentthumb.php" />
         <option value="$PROJECT_DIR$/application/malongbo/controller/Publish.php" />
         <option value="$PROJECT_DIR$/application/malongbo/controller/Allthumbsstatus.php" />
-        <option value="$PROJECT_DIR$/application/person/controller/Index.php" />
         <option value="$PROJECT_DIR$/application/malongbo/controller/Thumbslist.php" />
+        <option value="$PROJECT_DIR$/application/person/controller/Index.php" />
+        <option value="$PROJECT_DIR$/application/malongbo/controller/Allcommentstatus.php" />
+        <option value="$PROJECT_DIR$/application/school/controller/Schoolcircle.php" />
+        <option value="$PROJECT_DIR$/application/malongbo/controller/Schoolcircle.php" />
       </list>
     </option>
   </component>
@@ -385,12 +394,12 @@
       <workItem from="1564059688190" duration="4369000" />
       <workItem from="1564110104356" duration="3694000" />
       <workItem from="1564206598366" duration="890000" />
-      <workItem from="1564373347818" duration="4419000" />
+      <workItem from="1564373347818" duration="4950000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32153000" />
+    <option name="totallyTimeSpent" value="32684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="74" y="25" width="1204" height="832" extended-state="0" />
@@ -625,13 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Schoolcircle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-900">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/person/controller/Savenickname.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -673,16 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/school/controller/Schoolcircle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#120#151#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/school/controller/Publish.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -710,13 +702,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/person/controller/Index.php">
+    <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Thumbslist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="186" selection-start-line="186" selection-end-line="186" />
-          <folding>
-            <element signature="e#120#151#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -727,15 +716,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Thumbslist.php">
+    <entry file="file://$PROJECT_DIR$/application/person/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="16" />
+        <state relative-caret-position="658">
+          <caret line="191" selection-start-line="191" selection-end-line="191" />
+          <folding>
+            <element signature="e#120#151#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Allcommentstatus.php">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2700">
+          <caret line="185" selection-start-line="185" selection-end-line="185" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/school/controller/Schoolcircle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#120#151#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Schoolcircle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="307" column="4" selection-start-line="307" selection-start-column="4" selection-end-line="307" selection-end-column="4" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

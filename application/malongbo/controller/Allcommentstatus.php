@@ -183,5 +183,5 @@ class Allcommentstatus
         return json($data);
 
     }
-    
+
 }
