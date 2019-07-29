@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c84f647-7514-49a2-8e9c-e18465680681" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/public/UserProtocol/protocol.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/UserProtocol/protocol.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/malongbo/controller/Register.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/malongbo/controller/Register.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,14 +44,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="html" value="34" />
-          <entry key="php" value="1170" />
+          <entry key="html" value="51" />
+          <entry key="php" value="1176" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="34" />
-          <entry key="PHP" value="1170" />
+          <entry key="HTML" value="51" />
+          <entry key="PHP" value="1176" />
           <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
@@ -91,20 +91,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+            <state relative-caret-position="90">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/UserProtocol/protocol.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="195">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -199,8 +199,8 @@
         <option value="$PROJECT_DIR$/application/malongbo/controller/Allcommentstatus.php" />
         <option value="$PROJECT_DIR$/application/school/controller/Schoolcircle.php" />
         <option value="$PROJECT_DIR$/application/malongbo/controller/Schoolcircle.php" />
-        <option value="$PROJECT_DIR$/application/malongbo/controller/Register.php" />
         <option value="$PROJECT_DIR$/public/UserProtocol/protocol.html" />
+        <option value="$PROJECT_DIR$/application/malongbo/controller/Register.php" />
       </list>
     </option>
   </component>
@@ -255,13 +255,20 @@
             <path>
               <item name="www" type="b2602c69:ProjectViewProjectNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="malongbo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="www" type="b2602c69:ProjectViewProjectNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="malongbo" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="www" type="b2602c69:ProjectViewProjectNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="UserProtocol" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -313,12 +320,12 @@
       <workItem from="1564059688190" duration="4369000" />
       <workItem from="1564110104356" duration="3694000" />
       <workItem from="1564206598366" duration="890000" />
-      <workItem from="1564373347818" duration="5721000" />
+      <workItem from="1564373347818" duration="6213000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33455000" />
+    <option name="totallyTimeSpent" value="33947000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="74" y="25" width="1204" height="832" extended-state="0" />
@@ -662,17 +669,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Register.php">
+    <entry file="file://$PROJECT_DIR$/public/UserProtocol/protocol.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/UserProtocol/protocol.html">
+    <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="90">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>

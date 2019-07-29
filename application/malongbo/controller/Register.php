@@ -8,6 +8,7 @@
 
 namespace app\malongbo\controller;
 
+use think\Db;
 
 class Register
 {
