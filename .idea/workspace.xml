@@ -15,7 +15,7 @@
     <session id="-442641059">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
@@ -30,7 +30,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="4" />
-          <entry key="php" value="106" />
+          <entry key="php" value="107" />
           <entry key="png" value="7" />
         </counts>
       </usages-collector>
@@ -38,7 +38,7 @@
         <counts>
           <entry key="HTML" value="4" />
           <entry key="Image" value="7" />
-          <entry key="PHP" value="106" />
+          <entry key="PHP" value="107" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -76,17 +76,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Report.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="632">
-              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+            <state relative-caret-position="375">
+              <caret line="67" column="28" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Uploadphoto.php">
+        <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Token.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+              <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -443,8 +443,8 @@
         <option value="$PROJECT_DIR$/application/malongbo/controller/Register.php" />
         <option value="$PROJECT_DIR$/public/UserProtocol/tiaokuan.html" />
         <option value="$PROJECT_DIR$/public/UserProtocol/protocol.html" />
-        <option value="$PROJECT_DIR$/application/malongbo/controller/Report.php" />
         <option value="$PROJECT_DIR$/application/malongbo/controller/Schoolcircle.php" />
+        <option value="$PROJECT_DIR$/application/malongbo/controller/Report.php" />
       </list>
     </option>
   </component>
@@ -573,15 +573,15 @@
       <workItem from="1564206598366" duration="890000" />
       <workItem from="1564373347818" duration="6504000" />
       <workItem from="1564390566167" duration="793000" />
-      <workItem from="1564563880792" duration="2703000" />
+      <workItem from="1564563880792" duration="3395000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37734000" />
+    <option name="totallyTimeSpent" value="38426000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="73" y="23" width="1204" height="832" extended-state="0" />
+    <frame x="72" y="23" width="1204" height="832" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.302926" />
@@ -736,13 +736,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/person/controller/Myschool.php" />
-    <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Token.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -794,13 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -1079,10 +1065,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Token.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Report.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+        <state relative-caret-position="375">
+          <caret line="67" column="28" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
         </state>
       </provider>
     </entry>
