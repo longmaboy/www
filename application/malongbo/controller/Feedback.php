@@ -25,7 +25,7 @@ class Feedback
 
             if (Token::verification_body_token($_POST['token'],$_POST['verificationcode'])) {
 
-                if (!isset($_POST['contentid']) || !isset($_POST['title']) || !isset($_POST['detail'])) {
+                if (!isset($_POST['content'])) {
                     $data = config()['requestsuccess'];
                     $data['code'] = 203;
                     $data['message'] = 'param error';
