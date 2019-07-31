@@ -30,7 +30,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="4" />
-          <entry key="php" value="105" />
+          <entry key="php" value="106" />
           <entry key="png" value="7" />
         </counts>
       </usages-collector>
@@ -38,46 +38,46 @@
         <counts>
           <entry key="HTML" value="4" />
           <entry key="Image" value="7" />
-          <entry key="PHP" value="105" />
+          <entry key="PHP" value="106" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
           <entry key="html" value="59" />
-          <entry key="php" value="1310" />
+          <entry key="php" value="1338" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="59" />
-          <entry key="PHP" value="1310" />
+          <entry key="PHP" value="1338" />
           <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="26" />
+          <entry key="PHP Class.type" value="27" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Schoolcircle.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="308" column="26" selection-start-line="308" selection-start-column="20" selection-end-line="308" selection-end-column="26" />
+            <state relative-caret-position="2524">
+              <caret line="307" selection-start-line="307" selection-end-line="307" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/login/controller/Register.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Report.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1230">
-              <caret line="87" column="5" selection-start-line="16" selection-start-column="4" selection-end-line="87" selection-end-column="5" />
+            <state relative-caret-position="632">
+              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -443,6 +443,7 @@
         <option value="$PROJECT_DIR$/application/malongbo/controller/Register.php" />
         <option value="$PROJECT_DIR$/public/UserProtocol/tiaokuan.html" />
         <option value="$PROJECT_DIR$/public/UserProtocol/protocol.html" />
+        <option value="$PROJECT_DIR$/application/malongbo/controller/Report.php" />
         <option value="$PROJECT_DIR$/application/malongbo/controller/Schoolcircle.php" />
       </list>
     </option>
@@ -463,7 +464,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="73" />
+    <option name="x" value="72" />
     <option name="y" value="23" />
     <option name="width" value="1204" />
     <option name="height" value="832" />
@@ -572,15 +573,16 @@
       <workItem from="1564206598366" duration="890000" />
       <workItem from="1564373347818" duration="6504000" />
       <workItem from="1564390566167" duration="793000" />
-      <workItem from="1564563880792" duration="2149000" />
+      <workItem from="1564563880792" duration="2703000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37180000" />
+    <option name="totallyTimeSpent" value="37734000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="73" y="23" width="1204" height="832" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.302926" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1072,8 +1074,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Schoolcircle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="308" column="26" selection-start-line="308" selection-start-column="20" selection-end-line="308" selection-end-column="26" />
+        <state relative-caret-position="2524">
+          <caret line="307" selection-start-line="307" selection-end-line="307" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
         </state>
       </provider>
     </entry>

@@ -56,7 +56,7 @@ class Report
             return json($data);
 
         }
-        
+
     }
 
     protected function saveReport($contentid, $uid, $title, $detail) {
@@ -65,7 +65,7 @@ class Report
             'contentid' => $contentid,
             'uid' => $uid,
             'title' => $title,
-            'detail' => $detail(),
+            'detail' => $detail,
         ];
 
         Db::table('sf_report')
