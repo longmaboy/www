@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c84f647-7514-49a2-8e9c-e18465680681" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/malongbo/controller/Schoolcircle.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/malongbo/controller/Schoolcircle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/UserProtocol/protocol.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/UserProtocol/protocol.html" afterDir="false" />
-    </list>
+    <list default="true" id="5c84f647-7514-49a2-8e9c-e18465680681" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,13 +45,13 @@
         <counts>
           <entry key="dummy" value="13" />
           <entry key="html" value="59" />
-          <entry key="php" value="1288" />
+          <entry key="php" value="1310" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="59" />
-          <entry key="PHP" value="1288" />
+          <entry key="PHP" value="1310" />
           <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
@@ -71,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Schoolcircle.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="322" column="99" selection-start-line="322" selection-start-column="99" selection-end-line="322" selection-end-column="99" />
+            <state relative-caret-position="325">
+              <caret line="308" column="26" selection-start-line="308" selection-start-column="20" selection-end-line="308" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -576,16 +572,15 @@
       <workItem from="1564206598366" duration="890000" />
       <workItem from="1564373347818" duration="6504000" />
       <workItem from="1564390566167" duration="793000" />
-      <workItem from="1564563880792" duration="1230000" />
+      <workItem from="1564563880792" duration="2149000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36261000" />
+    <option name="totallyTimeSpent" value="37180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="73" y="23" width="1204" height="832" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.302926" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1077,8 +1072,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/malongbo/controller/Schoolcircle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="322" column="99" selection-start-line="322" selection-start-column="99" selection-end-line="322" selection-end-column="99" />
+        <state relative-caret-position="325">
+          <caret line="308" column="26" selection-start-line="308" selection-start-column="20" selection-end-line="308" selection-end-column="26" />
         </state>
       </provider>
     </entry>
